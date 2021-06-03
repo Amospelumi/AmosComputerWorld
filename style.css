@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(9, 8, 97, 0.892), rgba(9, 8, 97, 0.631)), url("images/developer.jpg") ;
+    background-position: center;
+    background-size: cover;
+    position: relative ;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+    margin-top: 35px;
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    display: block;
+    background-color: rgb(184, 6, 6);
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 45px;
+    color: white;
+}
+.text-box p{
+    margin-top: 10px;
+    font-size: 17px;
+}
+.hero-btn{
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    padding: 12px 34px;
+    background: transparent;
+    margin-top: 15px;
+    text-decoration:none;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid rgb(184, 6, 6);
+    background-color: rgb(184, 6, 6);
+    transition: 1s;
+    border-radius: 8px;
+}
+nav .fa{
+    display: none;
+}
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 30px;
+    }
+    .text-box p{
+        font-size: 10px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: rgb(184, 6, 6);
+        height: 100vh;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+.services{
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    width: 80%;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: rgba(70, 69, 69, 0.432);
+}
+p{
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.coursecol{
+    flex-basis: 30%;
+    background-color: rgba(191, 195, 250, 0.59);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.coursecol:hover{ 
+    box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.coursecol a:hover{ 
+    box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(40, 47, 150, 0.59);
+    border-style: none;
+}
+.coursecol a{
+    background-color: rgba(146, 153, 250, 0.637);
+    border-style: none;
+    border-radius: 10px;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px;
+}
+
+@media (max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.faculty{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.facultycol{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.facultycol img{
+    width: 100%;
+    height: 100%;
+}
+.faculty p{
+    color: rgb(104, 103, 103);
+    font-weight: 500;
+}
+.layer{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.199), rgba(20, 27, 130, 0.89));
+}
+.layer h3{
+    color: white;
+    width: 100%;
+    font-size: 26px;
+    font-weight: 500;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+}
+.layer:hover h3{
+    bottom: 43%;
+    opacity: 1;
+}
+
