@@ -3,7 +3,9 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 .header{
     min-height: 100vh;
     width: 100%;
@@ -241,4 +243,23 @@ h3{
 }
 .icon a{
     text-decoration: none;
+}
+.top-btn{
+    display: flex;
+    position: absolute;
+    left: 90%;
+    border-radius: 70px;
+    background-color: rgb(124, 9, 9);
+    padding: 20px;
+}
+
+.top-btn a{
+    color: white;
+    text-decoration: none;
+   
+}
+.top-btn:hover {
+    box-shadow: 1px 1px 13px 1px black;
+    background-image: linear-gradient(rgba(9, 8, 97, 0.631), rgb(124, 9, 9));
+    transition: 0.5s;
 }
