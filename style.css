@@ -239,3 +239,6 @@ h3{
 .footer p{
     font-weight: 400;
 }
+.icon a{
+    text-decoration: none;
+}
