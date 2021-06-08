@@ -134,7 +134,7 @@ p{
 }
 .coursecol{
     flex-basis: 30%;
-    background-color: rgba(191, 195, 250, 0.59);
+    background-color: rgba(218, 221, 250, 0.515);
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 25px 15px;
@@ -150,7 +150,7 @@ p{
     border-style: none;
 }
 .coursecol a{
-    background-color: rgba(146, 153, 250, 0.637);
+    background-color: rgba(128, 136, 250, 0.672);
     border-style: none;
     border-radius: 10px;
 }
@@ -169,6 +169,12 @@ h3{
     width: 80%;
     text-align: center;
     margin: auto;
+}
+.moving-text{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    position: relative;
 }
 .facultycol{
     flex-basis: 32%;
@@ -244,6 +250,7 @@ h3{
 }
 .icon a{
     text-decoration: none;
+    padding: 15px;
 }
 .top-btn{
     display: flex;
@@ -268,4 +275,11 @@ h3{
     .top-btn{
         left:50%;
     }
+}
+.serviceicon img{
+    width: 40%;
+    background-color: black;
+    border-radius: 100px;
+    /* margin: auto; */
+    border-style: none;
 }
