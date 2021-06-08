@@ -227,6 +227,7 @@ h3{
     color: white;
     margin-bottom: 40px;
     padding: 0;
+    
 }
 .footer{
     width: 100%;
@@ -262,4 +263,9 @@ h3{
     box-shadow: 1px 1px 13px 1px black;
     background-image: linear-gradient(rgba(9, 8, 97, 0.631), rgb(124, 9, 9));
     transition: 0.5s;
+}
+@media(max-width:700px){
+    .top-btn{
+        left:50%;
+    }
 }
