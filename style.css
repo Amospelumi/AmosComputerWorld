@@ -1,3 +1,6 @@
+body{
+    background-color: rgba(238, 238, 238, 0.35);
+}
 *{
     margin: 0;
     padding: 0;
@@ -182,15 +185,21 @@ h3{
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
+    transition: 0.5s;
 }
 .facultycol img{
     width: 100%;
     height: 100%;
+    
+}
+.facultycol:hover{
+    box-shadow: 1px 1px 10px 0 black;
 }
 .faculty p{
     color: rgb(104, 103, 103);
     font-weight: 500;
 }
+
 .layer{
     background-color: transparent;
     height: 100%;
@@ -206,7 +215,23 @@ h3{
 .layer h3{
     color: white;
     width: 100%;
-    font-size: 26px;
+    font-size: 28px;
+    font-weight: 500;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    transition: 0.5s;
+    opacity: 0;
+}
+.layer:hover h3{
+    top: 23%;
+    opacity: 1;
+}
+.layer p{
+    color: white;
+    width: 100%;
+    font-size: 19px;
     font-weight: 500;
     bottom: 0;
     left: 50%;
@@ -215,8 +240,8 @@ h3{
     transition: 0.5s;
     opacity: 0;
 }
-.layer:hover h3{
-    bottom: 43%;
+.layer:hover p{
+    bottom: 32%;
     opacity: 1;
 }
 .cta{
@@ -278,8 +303,13 @@ h3{
 }
 .serviceicon img{
     width: 40%;
-    background-color: black;
     border-radius: 100px;
-    /* margin: auto; */
+    margin: auto;
+    border-style: none;
+}
+.serviceicon{
+    width: 80%;
+    border-radius: 100px;
+    margin: auto;
     border-style: none;
 }
