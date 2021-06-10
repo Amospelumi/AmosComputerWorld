@@ -201,7 +201,7 @@ h3{
 }
 
 .layer{
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.597);
     height: 100%;
     width: 100%;
     position: absolute;
