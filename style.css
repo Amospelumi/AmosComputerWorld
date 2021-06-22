@@ -160,7 +160,7 @@ nav .fa{
         display: block;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         background: rgb(184, 6, 6);
         height: 100vh;
         top: 0;
@@ -178,15 +178,18 @@ nav .fa{
     }
 }
 .header{
-    /* position: relative ;  */
+    position: relative ; 
+    min-height: 100vh;
+    width: 100%;
 }
 .services{
-    position: relative;
+    position: absolute;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 200px;
     text-align: center;
     width: 80%;
-    top: 500px;
+    left: 10%;
+    transform: translate(0, 150);
 }
 h1{
     font-size: 36px;
@@ -240,6 +243,9 @@ h3{
     text-align: center;
     margin: auto;
     position: relative;
+    transform: translate(0, -150);
+    padding-top: 350px;
+    
     top: 500px;
 }
 .moving-text{
