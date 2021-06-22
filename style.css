@@ -1,5 +1,6 @@
 body{
     background-color: rgba(238, 238, 238, 0.35);
+    position: relative;
 }
 *{
     margin: 0;
@@ -16,28 +17,11 @@ html {
     position: absolute;
     background-size: cover;
   }
-.slideshow-container::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    background: rgba(0, 0, 255, 0.2);
-    z-index: 1;
-}
+
   .mySlides{
       display: none;
   }
   
-  /* The dots/bullets/indicators */
-  .scroll{
-      display: flex;
-      justify-content: space-between;
-      width: 5%;
-      position: absolute;
-      top: 550px;
-      left: 600px;
-  }
   .dot {
     top: 550px;
     left: 600px;
@@ -50,7 +34,7 @@ html {
     transition: background-color 0.6s ease;
   }
   
-  .active {
+  .activee {
     background-color: #717171;
   }
   
@@ -109,15 +93,34 @@ nav{
     text-decoration: none;
     font-size: 14px;
 }
+
+#active {
+
+    background-color: rgb(184, 6, 6);
+    border-radius: 20px;
+   
+}
 .text-box{
     width: 90%;
     color: white;
-    position:absolute;
-    top: 400px;
+    position:relative;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+/* The dots/bullets/indicators */
+.scroll{
+    display: flex;
+    justify-content: space-between;
+    width: 5%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 250px;
+    left: 50%;
+}
+
 .text-box h1{
     font-size: 45px;
     color: white;

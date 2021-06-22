@@ -15,7 +15,7 @@
 <body>
 
     <!-- This is the header section -->
-    <section class="header">
+    <section>
         <div class="slideshow-container">
 
             <div class="mySlides fade">
@@ -31,20 +31,15 @@
             </div>
             
             </div>
-            <br>
             
-            <div class="scroll" style="text-align:center">
-              <div class="dot"></div> 
-              <div class="dot"></div> 
-              <div class="dot"></div> 
-        </div>
+            <br>
 
         <nav>
             <a href="index.html"><img src="images/acw.png" alt="ACW Logo" width="90" ></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul id="home">
-                    <li><a href="index.html"> HOME</a></li>
+                    <li id="active"><a href="index.html"> HOME</a></li>
                     <li><a href="service.html"> SERVICES</a></li>
                     <li><a href="about.html"> ABOUT US</a></li>
                     <li><a href="contact.html"> CONTACT US</a></li>
@@ -59,6 +54,13 @@
             <p>Providing solutions that will help Organizations revolve their brands around technology.</p>
             <a href="service.html"class="hero-btn">Visit us to know more</a>
         </div>
+
+        <div class="scroll" style="text-align:center">
+            <div class="dot"></div> 
+            <div class="dot"></div> 
+            <div class="dot"></div> 
+      </div>
+      
     </section>
 
     <!-- This is the service section -->
@@ -200,10 +202,10 @@
       slideIndex++;
       if (slideIndex > slides.length) {slideIndex = 1}    
       for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" activee", "");
       }
       slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
+      dots[slideIndex-1].className += " activee";
       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
     </script>
