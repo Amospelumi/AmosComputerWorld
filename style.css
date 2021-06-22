@@ -9,18 +9,77 @@ body{
 html {
     scroll-behavior: smooth;
   }
-.header{
+/* Slideshow container */
+.slideshow-container {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(9, 8, 97, 0.892), rgba(9, 8, 97, 0.631)), url("images/developer.jpg") ;
-    background-position: center;
+    position: absolute;
     background-size: cover;
-    position: relative ;
+  }
+.slideshow-container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 255, 0.2);
+    z-index: 1;
 }
+  .mySlides{
+      display: none;
+  }
+  
+  /* The dots/bullets/indicators */
+  .scroll{
+      display: flex;
+      justify-content: space-between;
+      width: 5%;
+      position: absolute;
+      top: 550px;
+      left: 600px;
+  }
+  .dot {
+    top: 550px;
+    left: 600px;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    /* display: inline-block; */
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .8} 
+    to {opacity: 10}
+  }
+  
+  @keyframes fade {
+    from {opacity: .8} 
+    to {opacity: 10}
+  }
+
+/* nav a{
+    position: relative;
+} */
 nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
+    position: relative;
 }
 .nav-links{
     flex: 1;
@@ -54,7 +113,7 @@ nav{
     width: 90%;
     color: white;
     position:absolute;
-    top: 50%;
+    top: 400px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -98,7 +157,7 @@ nav .fa{
         display: block;
     }
     .nav-links{
-        position: fixed;
+        position: absolute;
         background: rgb(184, 6, 6);
         height: 100vh;
         top: 0;
@@ -115,11 +174,16 @@ nav .fa{
         cursor: pointer;
     }
 }
+.header{
+    /* position: relative ;  */
+}
 .services{
+    position: relative;
     margin: auto;
     padding-top: 100px;
     text-align: center;
     width: 80%;
+    top: 500px;
 }
 h1{
     font-size: 36px;
@@ -172,6 +236,8 @@ h3{
     width: 80%;
     text-align: center;
     margin: auto;
+    position: relative;
+    top: 500px;
 }
 .moving-text{
     width: 40%;
@@ -253,6 +319,8 @@ h3{
     border-radius: 10px;
     text-align: center;
     padding: 100px 0;
+    position: relative;
+    top: 450px;
 }
 .cta h1{
     color: white;
@@ -264,6 +332,8 @@ h3{
     width: 100%;
     text-align: center;
     padding: 30px 0;
+    position: relative;
+    top: 450px;
 }
 .footer h4{
     margin-bottom: 25px;
