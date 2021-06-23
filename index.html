@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+ 
+</style>
 </head>
 <body>
 
@@ -35,12 +39,24 @@
             <br>
 
         <nav>
-            <a href="index.html"><img src="images/acw.png" alt="ACW Logo" width="90" ></a>
+            <a href="service.html"><img src="images/acw.png" alt="ACW Logo" width="90" ></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul id="home">
                     <li id="active"><a href="index.html"> HOME</a></li>
-                    <li><a href="service.html"> SERVICES</a></li>
+                    <li> 
+                        <div class="dropdown">
+                            <button class="dropbtn">SERVICES <i class="fas fa-chevron-down"></i></button>
+                                <div class="dropdown-content">
+                                    <a href="#">Digital Marketing</a>
+                                    <a href="#">Web Development</a>
+                                    <a href="#">UI/UX Design</a>
+                                    <a href="#">Graphics Design</a>
+                                    <a href="#">Video Editing</a>
+                                    <a href="#">Training</a>
+                                </div>
+                        </div>  
+                    </li>
                     <li><a href="about.html"> ABOUT US</a></li>
                     <li><a href="contact.html"> CONTACT US</a></li>
                 </ul>
@@ -76,7 +92,7 @@
                     Digital marketing is the component of marketing that utilizes 
                     internet and online based digital technologies.
                 </p>
-                <a href="service.html"class="hero-btn">Read More</a>
+                <a href="service.html" class="hero-btn">Read More</a>
             </div>
             <div class="coursecol">
                 <div class="serviceicon">
@@ -87,7 +103,7 @@
                     Computer programming is the process of designing 
                     and building an executable computer program to accomplish.
                 </p>
-                <a href="service.html"class="hero-btn">Read More</a>
+                <a href="service.html" class="hero-btn">Read More</a>
             </div>
             <div class="coursecol">
                 <div class="serviceicon">
@@ -99,7 +115,7 @@
                     through usability, usefulness, and desirability provided 
                     in the interaction with a product.
                 </p>
-                <a href="service.html"class="hero-btn">Read More</a>
+                <a href="service.html" class="hero-btn">Read More</a>
             </div>
         </div>
     </section>
