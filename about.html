@@ -16,18 +16,30 @@
 <section class="topimages">
 
     <nav>
-    <a href="index.html"><img src="images/acw.png" alt="ACW Logo" width="90" ></a>
-    <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hideMenu()"></i>
-        <ul id="home">
-            <li><a href="index.html"> HOME</a></li>
-            <li><a href="service.html"> SERVICES</a></li>
-            <li id="active"><a href="about.html"> ABOUT US</a></li>
-            <li><a href="contact.html"> CONTACT US</a></li>
-        </ul>
-    </div>
-    <i class="fa fa-bars" onclick="showMenu()"></i>
-</nav>
+        <a href="service.html"><img src="images/acw.png" alt="ACW Logo" width="90" ></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul id="home">
+                <li id="active"><a href="index.html"> HOME</a></li>
+                <li> 
+                    <div class="dropdown">
+                        <button class="dropbtn">SERVICES <i class="fas fa-chevron-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">Digital Marketing</a>
+                                <a href="#">Web Development</a>
+                                <a href="#">UI/UX Design</a>
+                                <a href="#">Graphics Design</a>
+                                <a href="#">Video Editing</a>
+                                <a href="#">Training</a>
+                            </div>
+                    </div>  
+                </li>
+                <li><a href="about.html"> ABOUT US</a></li>
+                <li><a href="contact.html"> CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
 
 <div class="text-box">
     <h1>About Us</h1>
