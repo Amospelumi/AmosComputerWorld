@@ -1,5 +1,5 @@
 .header {
-    min-height: 70vh;
+    min-height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(9, 8, 97, 0.892), rgba(9, 8, 97, 0.631)), url("images/Services.jpg");
     background-position: center;
@@ -8,7 +8,7 @@
     margin-bottom: 20px;
 }
 .topimage{
-    min-height: 70vh;
+    min-height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(9, 8, 97, 0.892), rgba(9, 8, 97, 0.631)), url("images/contact.png");
     background-position: center;
@@ -17,7 +17,7 @@
     margin-bottom: 20px;
 }
 .topimages{
-    min-height: 70vh;
+    min-height: 50vh;
     width: 100%;
     background-image: linear-gradient(rgba(9, 8, 97, 0.892), rgba(9, 8, 97, 0.631)), url("images/keyboard2.jpg");
     background-position: center;
