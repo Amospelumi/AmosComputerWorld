@@ -117,7 +117,7 @@ nav{
     width: 5%;
     position: relative;
     transform: translate(-50%, -50%);
-    top: 250px;
+    top: 550px;
     left: 50%;
 }
 
@@ -222,6 +222,11 @@ p{
     background-color: rgba(128, 136, 250, 0.672);
     border-style: none;
     border-radius: 10px;
+    transition: 0.5s;
+}
+.coursecol a:hover{
+    background-color: rgb(15, 26, 181);
+    border-style: none;
 }
 h3{
     text-align: center;
@@ -237,12 +242,11 @@ h3{
 .faculty{
     width: 80%;
     text-align: center;
-    margin: auto;
     position: relative;
-    transform: translate(0, -150);
-    padding-top: 350px;
-    
-    top: 500px;
+    transform: translate(0, 150);
+    padding-top: 120px;
+    left: 10%;
+    top: 800px;
 }
 .moving-text{
     width: 40%;
@@ -325,7 +329,7 @@ h3{
     text-align: center;
     padding: 100px 0;
     position: relative;
-    top: 450px;
+    top: 850px;
 }
 .cta h1{
     color: white;
@@ -338,7 +342,7 @@ h3{
     text-align: center;
     padding: 30px 0;
     position: relative;
-    top: 450px;
+    top: 800px;
 }
 .footer h4{
     margin-bottom: 25px;
